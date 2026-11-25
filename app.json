@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "주변개선",
+    "slug": "fire-guard-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.urigachi.fireguard",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "./plugins/withGradleMirror",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "콘센트·멀티탭·책상·얼굴 사진을 선택해 AI로 분석하기 위해 사진 접근 권한이 필요합니다.",
+          "cameraPermission": "콘센트·멀티탭·책상·얼굴을 촬영해 AI로 분석하기 위해 카메라 권한이 필요합니다."
+        }
+      ],
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "d9c33537-2d7a-4332-b200-ea4fb586bd6f"
+      }
+    },
+    "owner": "urigachi"
+  }
+}
